@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Web3 Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .start-btn {
+            padding: 1.2rem 4rem;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.3);
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        .language-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .language-btn img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <button class="language-btn">
+        <img src="icons/change-language.png" alt="Сменить язык">
+    </button>
+
+    <div class="container">
+        <h1 class="title">Test Web3 Game</h1>
+        <button class="start-btn" onclick="goToStartMenu()">Начать</button>
+    </div>
+
+    <script>
+        function goToStartMenu() {
+            window.location.href = 'menus/SavesMenu.html';
+        }
+    </script>
+</body>
+</html>
