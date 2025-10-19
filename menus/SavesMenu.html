@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Web3 Game - Start Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .save-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1.2rem 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .save-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .plus-sign {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .save-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Выберите сохранение</h1>
+        
+        <button class="save-btn">
+            <span class="plus-sign">+</span>
+            <span class="save-text">новое сохранение</span>
+            <span style="width: 1.5rem;"></span> <!-- Пустой элемент для выравнивания -->
+        </button>
+        
+        <button class="save-btn">
+            <span class="plus-sign">+</span>
+            <span class="save-text">новое сохранение</span>
+            <span style="width: 1.5rem;"></span>
+        </button>
+        
+        <button class="save-btn">
+            <span class="plus-sign">+</span>
+            <span class="save-text">новое сохранение</span>
+            <span style="width: 1.5rem;"></span>
+        </button>
+    </div>
+</body>
+</html>
